@@ -6,7 +6,7 @@
     "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "sync": "cross-env NODE_ENV=development MIX_ENV=sync node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
+    "build": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "format": "prettier --write 'src/**/*.{css,scss,js,twig}'",
     "snyk-protect": "snyk protect",
@@ -67,5 +67,8 @@
     "snyk": "^1.518.0",
     "tiny-emitter": "^2.1.0"
   },
-  "snyk": true
+  "snyk": true,
+  "engines": {
+    "node": "16"
+  }
 }

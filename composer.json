@@ -22,6 +22,7 @@
     "require": {
         "bref/bref": "^2.0",
         "craftcms/aws-s3": "^2.0.0",
+        "craftcms/cloud": "^1.0.0",
         "craftcms/cms": "^4.0.0",
         "craftcms/redactor": "^3.0.0",
         "craftcms/yii2-dynamodb": "^2.0.0",
@@ -59,5 +60,12 @@
             "@php craft demos/seed > /dev/null 2>&1"
         ]
     },
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://composer.craftcms.com",
+            "canonical": false
+        }
+    ]
 }
