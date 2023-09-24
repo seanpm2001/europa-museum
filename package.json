@@ -8,7 +8,7 @@
     "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "build": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "format": "prettier --write 'src/**/*.{css,scss,js,twig}'",
+    "format": "prettier --write 'src/**/*.{css,scss,js,twig}'"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
