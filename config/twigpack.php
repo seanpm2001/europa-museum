@@ -21,8 +21,8 @@ return [
         ],
         // Public server config
         'server' => [
-            'manifestPath' => '@webroot/assets/dist',
-            'publicPath' => '@assetBaseUrl/assets/dist',
+            'manifestPath' => \craft\cloud\Helper::artifactUrl('dist') ?? '@webroot/assets/dist',
+            'publicPath' => \craft\cloud\Helper::artifactUrl() ?? '@web/dist',
         ],
         // webpack-dev-server config
         'devServer' => [

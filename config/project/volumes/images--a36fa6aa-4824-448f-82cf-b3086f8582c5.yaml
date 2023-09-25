@@ -49,7 +49,7 @@ fieldLayouts:
             width: 100
         name: Content
         uid: 4137e69d-a442-464d-8260-f253f42201c5
-fs: $FS_HANDLE
+fs: images
 handle: images
 name: Images
 sortOrder: 1
