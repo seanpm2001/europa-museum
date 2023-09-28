@@ -12,7 +12,7 @@ if (mix.inProduction()) {
 }
 
 mix
-    .setPublicPath(`${process.env.CRAFT_CLOUD_ARTIFACT_BASE_URL}/dist/`)
+    .setPublicPath('./web/dist')
     .sass('src/css/site.scss', './web/dist/css')
     .js('src/js/site.js', './web/dist/js')
     .copy('src/images', './web/dist/images')
