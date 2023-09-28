@@ -17,7 +17,7 @@ mix
     .js('src/js/site.js', './web/dist/js')
     .copy('src/images', './web/dist/images')
     .copy('src/fonts', './web/dist/fonts')
-    .copy('src/favicon.ico', './web/dist')
+    // .copy('src/favicon.ico', './web/dist')
 
     .options({
         autoprefixer: false,
