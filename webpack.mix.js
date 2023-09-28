@@ -6,12 +6,16 @@ require('laravel-mix-criticalcss');
 require('laravel-mix-purgecss');
 
 mix
+    // .setPublicPath(mix.inProduction()
+    //     ? `https://cdn.craft.cloud/${process.env.CRAFT_CLOUD_ENVIRONMENT_ID}/builds/${process.env.CRAFT_CLOUD_BUILD_ID}/artifacts/dist`
+    //     : './web/dist'
+    // )
     .setPublicPath('./web/dist')
     .sass('src/css/site.scss', './web/dist/css')
     .js('src/js/site.js', './web/dist/js')
     .copy('src/images', './web/dist/images')
     .copy('src/fonts', './web/dist/fonts')
-    .copy('src/favicon.ico', './web/dist')
+    // .copy('src/favicon.ico', './web/dist')
 
     .options({
         autoprefixer: false,

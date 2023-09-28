@@ -20,6 +20,7 @@
 /web/favicon.ico
 /web/manifest.json
 /web/browserconfig.xml
+/web/dist
 
 # BUILD FILES
 /node_modules
