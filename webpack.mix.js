@@ -65,6 +65,9 @@ mix
 
 if (mix.inProduction()) {
     mix.version();
+    mix.webpackConfig({
+        publicPath: `${process.env.CRAFT_CLOUD_ARTIFACT_BASE_URL}/dist/`,
+    })
 } else if (process.env.MIX_ENV == 'sync') {
     mix
         .sourceMaps(true, 'source-map')
@@ -85,7 +88,3 @@ if (mix.inProduction()) {
 // if (mix.isWatching()) {
 //     mix.bundleAnalyzer();
 // }
-
-if (mix.inProduction()) {
-    mix.setResourceRoot(`https://cdn.craft.cloud/${process.env.CRAFT_CLOUD_ENVIRONMENT_ID}/builds/${process.env.CRAFT_CLOUD_BUILD_ID}/artifacts/dist/`)
-}
