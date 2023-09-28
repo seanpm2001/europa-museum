@@ -6,10 +6,6 @@ require('laravel-mix-criticalcss');
 require('laravel-mix-purgecss');
 
 mix
-    // .setPublicPath(mix.inProduction()
-    //     ? `https://cdn.craft.cloud/${process.env.CRAFT_CLOUD_ENVIRONMENT_ID}/builds/${process.env.CRAFT_CLOUD_BUILD_ID}/artifacts/dist`
-    //     : './web/dist'
-    // )
     .setPublicPath('./web/dist')
     .sass('src/css/site.scss', './web/dist/css')
     .js('src/js/site.js', './web/dist/js')
@@ -89,3 +85,7 @@ if (mix.inProduction()) {
 // if (mix.isWatching()) {
 //     mix.bundleAnalyzer();
 // }
+
+if (mix.inProduction()) {
+    mix.setResourceRoot(`https://cdn.craft.cloud/${process.env.CRAFT_CLOUD_ENVIRONMENT_ID}/builds/${process.env.CRAFT_CLOUD_BUILD_ID}/artifacts/dist/`)
+}
