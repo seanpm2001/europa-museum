@@ -66,7 +66,9 @@ mix
 if (mix.inProduction()) {
     mix.version();
     mix.webpackConfig({
-        publicPath: `${process.env.CRAFT_CLOUD_ARTIFACT_BASE_URL}/dist/`,
+        output: {
+            publicPath: `${process.env.CRAFT_CLOUD_ARTIFACT_BASE_URL}/dist/`,
+        }
     })
 } else if (process.env.MIX_ENV == 'sync') {
     mix
