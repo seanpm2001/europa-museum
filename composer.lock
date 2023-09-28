@@ -48,11 +48,11 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.281.12",
+            "version": "3.281.15",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/22a92f08758db2b152843ea0875eeee5a467d8ff",
-                "reference": "22a92f08758db2b152843ea0875eeee5a467d8ff",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8256b827274966396eccf8ad391ce88d7c53ffa0",
+                "reference": "8256b827274966396eccf8ad391ce88d7c53ffa0",
                 "shasum": ""
             },
             "require": {
@@ -109,7 +109,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2023-09-22T18:12:27+00:00"
+            "time": "2023-09-27T18:06:59+00:00"
         },
         {
             "name": "bref/bref",
@@ -834,16 +834,16 @@
         },
         {
             "name": "craftcms/cloud",
-            "version": "1.7.5",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cloud-extension-yii2.git",
-                "reference": "5bf81fb064631c4c462549bb82d095973d14d3f4"
+                "reference": "2ee018bc945c4cbbbc86d9831e4c38dd1a6d3068"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/5bf81fb064631c4c462549bb82d095973d14d3f4",
-                "reference": "5bf81fb064631c4c462549bb82d095973d14d3f4",
+                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/2ee018bc945c4cbbbc86d9831e4c38dd1a6d3068",
+                "reference": "2ee018bc945c4cbbbc86d9831e4c38dd1a6d3068",
                 "shasum": ""
             },
             "require": {
@@ -872,17 +872,17 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/craftcms/cloud-extension-yii2/issues",
-                "source": "https://github.com/craftcms/cloud-extension-yii2/tree/1.7.5"
+                "source": "https://github.com/craftcms/cloud-extension-yii2/tree/1.9.0"
             },
-            "time": "2023-09-14T02:24:12+00:00"
+            "time": "2023-09-27T13:20:19+00:00"
         },
         {
             "name": "craftcms/cms",
-            "version": "4.5.5",
+            "version": "4.5.6.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/906e011df5c248174770050ee598f620005f6623",
-                "reference": "906e011df5c248174770050ee598f620005f6623",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/fac7353b79c771d1d6ceb62e5addb10d4f5c0eb3",
+                "reference": "fac7353b79c771d1d6ceb62e5addb10d4f5c0eb3",
                 "shasum": ""
             },
             "require": {
@@ -970,7 +970,7 @@
                 "docs": "https://craftcms.com/docs/4.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2023-09-15T04:55:07+00:00"
+            "time": "2023-09-27T12:28:01+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -1476,11 +1476,11 @@
         },
         {
             "name": "doctrine/deprecations",
-            "version": "v1.1.1",
+            "version": "1.1.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/612a3ee5ab0d5dd97b7cf3874a6efe24325efac3",
-                "reference": "612a3ee5ab0d5dd97b7cf3874a6efe24325efac3",
+                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/4f2d4f2836e7ec4e7a8625e75c6aa916004db931",
+                "reference": "4f2d4f2836e7ec4e7a8625e75c6aa916004db931",
                 "shasum": ""
             },
             "require": {
@@ -1500,7 +1500,7 @@
             ],
             "description": "A small layer on top of trigger_error(E_USER_DEPRECATED) or PSR-3 logging with options to disable all deprecations or selectively for packages.",
             "homepage": "https://www.doctrine-project.org/",
-            "time": "2023-06-03T09:27:29+00:00"
+            "time": "2023-09-27T20:04:15+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -2255,11 +2255,11 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.12",
+            "version": "v5.2.13",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/ad87d5a5ca981228e0e205c2bc7dfb8e24559b60",
-                "reference": "ad87d5a5ca981228e0e205c2bc7dfb8e24559b60",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/fbbe7e5d79f618997bc3332a6f49246036c45793",
+                "reference": "fbbe7e5d79f618997bc3332a6f49246036c45793",
                 "shasum": ""
             },
             "require": {
@@ -2306,7 +2306,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2022-04-13T08:02:27+00:00"
+            "time": "2023-09-26T02:20:38+00:00"
         },
         {
             "name": "league/flysystem",
@@ -3213,11 +3213,11 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.70.0",
+            "version": "2.71.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d3298b38ea8612e5f77d38d1a99438e42f70341d",
-                "reference": "d3298b38ea8612e5f77d38d1a99438e42f70341d",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/98276233188583f2ff845a0f992a235472d9466a",
+                "reference": "98276233188583f2ff845a0f992a235472d9466a",
                 "shasum": ""
             },
             "require": {
@@ -3277,7 +3277,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2023-09-07T16:43:50+00:00"
+            "time": "2023-09-25T11:31:05+00:00"
         },
         {
             "name": "nyholm/psr7",
@@ -3910,11 +3910,11 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.24.1",
+            "version": "1.24.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/9f854d275c2dbf84915a5c0ec9a2d17d2cd86b01",
-                "reference": "9f854d275c2dbf84915a5c0ec9a2d17d2cd86b01",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/bcad8d995980440892759db0c32acae7c8e79442",
+                "reference": "bcad8d995980440892759db0c32acae7c8e79442",
                 "shasum": ""
             },
             "require": {
@@ -3932,7 +3932,7 @@
                 "MIT"
             ],
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
-            "time": "2023-09-18T12:18:02+00:00"
+            "time": "2023-09-26T12:28:12+00:00"
         },
         {
             "name": "pixelandtonic/imagine",
@@ -7506,5 +7506,5 @@
     "platform-overrides": {
         "php": "8.1.8"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
