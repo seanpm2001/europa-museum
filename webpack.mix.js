@@ -5,12 +5,6 @@ const mix = require('laravel-mix');
 require('laravel-mix-criticalcss');
 require('laravel-mix-purgecss');
 
-if (mix.inProduction()) {
-    const artifactBaseUrl = `${process.env.CRAFT_CLOUD_ARTIFACT_BASE_URL}/dist/`;
-    __webpack_public_path__ = artifactBaseUrl;
-    mix.setResourceRoot(artifactBaseUrl);
-}
-
 mix
     .setPublicPath('./web/dist')
     .sass('src/css/site.scss', './web/dist/css')
@@ -87,7 +81,3 @@ if (mix.inProduction()) {
     mix
         .sourceMaps(true, 'source-map');
 }
-
-// if (mix.isWatching()) {
-//     mix.bundleAnalyzer();
-// }

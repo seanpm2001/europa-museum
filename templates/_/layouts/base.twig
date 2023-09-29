@@ -26,14 +26,14 @@
         <meta name="msapplication-TileColor" content="#000000">
         <meta name="msapplication-config" content="{{ url('browserconfig.xml') }}">
         <meta name="theme-color" content="#ffffff">
-        {{ craft.twigpack.includeCssModule('css/site.css', false) }}
+        {{ craft.twigpack.includeCssModule('/css/site.css', false) }}
     </head>
 
     <body class="first-load loading {% if bodyClass is defined %}{{ bodyClass }}{% endif %}">
 
         {% block body %}{% endblock %}
 
-        {{ craft.twigpack.includeJsModule("js/site.js") }}
+        {{ craft.twigpack.includeJsModule("/js/site.js") }}
 
     </body>
 
