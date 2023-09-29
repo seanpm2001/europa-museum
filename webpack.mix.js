@@ -5,6 +5,19 @@ const mix = require('laravel-mix');
 require('laravel-mix-criticalcss');
 require('laravel-mix-purgecss');
 
+mix.cdnify = function(path, cdn) {
+    let file = new File(path);
+
+    // Replace all occurrences of /img/ with CDN URL prepended
+    let contents = file.read().replace(/\/dist\//g, cdn+"/dist/");
+    file.write(contents);
+
+    // Update version hash in manifest
+    Mix.manifest.hash(file.pathFromPublic()).refresh();
+
+    return this;
+}.bind(mix)
+
 mix
     .setPublicPath('./web/dist')
     .sass('src/css/site.scss', './web/dist/css')
@@ -65,6 +78,12 @@ mix
 
 if (mix.inProduction()) {
     mix.version();
+
+    mix.then(function() {
+        const cdnUrl = `${process.env.CRAFT_CLOUD_ARTIFACT_BASE_URL || ''}`
+        mix.cdnify('./web/dist/css/site.css', cdnUrl)
+        mix.cdnify('./web/dist/js/site.js', cdnUrl)
+    })
 } else if (process.env.MIX_ENV == 'sync') {
     mix
         .sourceMaps(true, 'source-map')
